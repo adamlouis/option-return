@@ -1,5 +1,5 @@
 {
-  "name": "option-return",
+  "name": "returnif",
   "version": "1.0.0",
   "description": "``` cd babel npm i npm run build cd .. ```",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adamlouis/option-return.git"
+    "url": "git+https://github.com/adamlouis/returnif.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adamlouis/option-return/issues"
+    "url": "https://github.com/adamlouis/returnif/issues"
   },
-  "homepage": "https://github.com/adamlouis/option-return#readme"
+  "homepage": "https://github.com/adamlouis/returnif#readme"
 }
