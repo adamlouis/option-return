@@ -13,6 +13,42 @@ The `index.js` file:
 3. writes the AST and the transpiled JS to `js-gen` dir
 3. excutes the generated js in the`js-gen` dir
 
+before:
+
+```
+function fibonacci(num, results = {}) {
+    returnif results[num];
+
+    // TODO -> returnif (num <= 1) : 1;
+    if (num <= 1) {
+        return 1
+    }
+
+    return results[num] = (
+        fibonacci(num - 1, results) +
+        fibonacci(num - 2, results)
+    );
+}
+```
+
+after:
+
+```
+function fibonacci(num, results = {}) {
+  var returnIf_2978980376 = (results[num]);
+  if (returnIf_2978980376) {
+    return returnIf_2978980376;
+  }
+  // TODO -> returnif (num <= 1) : 1;
+
+  if (num <= 1) {
+    return 1;
+  }
+
+  return results[num] = fibonacci(num - 1, results) + fibonacci(num - 2, results);
+}
+```
+
 ## Running
 
 ### clone
