@@ -1,10 +1,10 @@
-# `returnif` demo
+## `returnif` Demo
 
-Checkout out the full post here: TODO
+Checkout out the full post here: <a target="_blank" href="https://suczewski.com/2018/07/returnif">https://suczewski.com/2018/07/returnif</a>
 
 Here's a demonstration of the new `returnif` keyword.
 
-This repo includes <a href="https://github.com/adamlouis/babel/pull/4">adamlouis/babel</a> as a git submodule.
+This repo includes <a target="_blank" href="https://github.com/adamlouis/babel/pull/4">adamlouis/babel</a> as a git submodule.
 
 The `index.js` file:
 
@@ -13,15 +13,15 @@ The `index.js` file:
 3. writes the AST and the transpiled JS to `js-gen` dir
 3. excutes the generated js in the`js-gen` dir
 
-# How to run
+## Running
 
-## clone
+### clone
 
 ```
 git clone git@github.com:adamlouis/returnif.git
 ```
 
-## build the babel submodule
+### build the babel submodule
 
 ```
 git submodule update --init
@@ -33,7 +33,7 @@ cd ..
 
 You may get some errors during `npm run build`. These are fine as long as @babel/generator and @babel/parser build correctly. You can verify this by checking for the presence of the `./babel/packages/babel-parser/lib` and `./babel/packages/babel-generator/lib` directories.
 
-# run!
+### run
 
 ```
 node .
